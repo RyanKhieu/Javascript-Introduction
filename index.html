@@ -3,12 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Ryan Khieu</h1>
-    <script src="script.js">
-
-    </script>
+    <script src="p5/p5.js"></script>;
+    <script src="p5/addons/p5.sound.min.js"></script>;
+    <script src="script.js"></script>;
+    <h1 onclick="">Ryan Khieu</h1>
+    <p>My name is Ryan Khieu and I am a student at the University of Washington. I am currently studying Informatics and I am interested in web development. I am excited to learn more about web development and I am looking forward to the rest of the quarter.</p>
+    <img src="https://www.washington.edu/brand/files/2014/09/W-Logo_Purple_Hex.png" alt="UW Logo">
+    <h2>Random Quote</h2>
+    <p id="quote">Click the button to generate a random quote.</p>
+    <button onclick="generateQuote()">Generate Quote</button>
+    <h2>Random Fact</h2>
+    <p id="fact">Click the button to generate a random fact.</p>
+    <button onclick="generateFact()">Generate Fact</button>
+    <h2>Random Joke</h2>
+    <p id="joke">Click the button to generate a random joke.</p>
+    <button onclick="generateJoke()">Generate Joke</button>
+    <h2>Random Image</h2>
+    <img id="image" src="https://via.placeholder.com/150" alt="Random Image">
+    <button onclick="generateImage()">Generate Image</button>
+    <h2>Random Number</h2>
+    <p id="number">Click the button to generate a random number.</p>
+    <button onclick="generateNumber()">Generate Number</button>
+    <h2>Random Color</h2>
+    <div id="color" style="width: 100px; height: 100px; border: 1px solid black;"></div>
+    <button onclick="generateColor()">Generate Color</button>
+    <h2>Random Video</h2>
+    <video id="video" width="320" height="240" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <button onclick="generateVideo()">Generate Video</button>
+    <h2>Random Audio</h2>
+    <audio id="audio" controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <button onclick="generateAudio()">Generate Audio</button>
 </body>
 </html>
